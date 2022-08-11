@@ -107,8 +107,8 @@ footer {
 }
 
 .ImagenDestacados:hover{
-    height: 280px;
-    width: 280px;
+    height: 260px;
+    width: 260px;
 }
 
 .DestacadoTexto {
@@ -143,8 +143,8 @@ grid-template-areas: Productos;
 }
 
 .ProductoImagen:hover{
-    height: 320px;
-    width: 320px;
+    height: 300px;
+    width: 300px;
 }
 
 .ProductosTexto {
