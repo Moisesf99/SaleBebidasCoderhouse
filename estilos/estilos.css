@@ -209,7 +209,7 @@ grid-template-areas: Productos;
     "Informacion"
     "Locales"
     "footer";
-    background-image: linear-gradient(to left, white,whitesmoke);
+    background-image: linear-gradient(to right, white,whitesmoke);
 }
 
 .Formulario{
