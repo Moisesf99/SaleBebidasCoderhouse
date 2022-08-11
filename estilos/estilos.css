@@ -50,6 +50,12 @@ li {
     text-align: center;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s;
+}
+
+.NoticiasTexto:hover{
+    color: darkcyan;
+    background-color: white;
 }
 
 body {
@@ -97,6 +103,12 @@ footer {
 .ImagenDestacados{
     width: 200px;
     height: 200px;
+    transition: 1s;
+}
+
+.ImagenDestacados:hover{
+    height: 280px;
+    width: 280px;
 }
 
 .DestacadoTexto {
@@ -127,6 +139,12 @@ grid-template-areas: Productos;
     height: 250px;
     width: 250px;
     justify-content: center;
+    transition: all 1s;
+}
+
+.ProductoImagen:hover{
+    height: 320px;
+    width: 320px;
 }
 
 .ProductosTexto {
@@ -191,6 +209,7 @@ grid-template-areas: Productos;
     "Informacion"
     "Locales"
     "footer";
+    background-image: linear-gradient(to left, white,whitesmoke);
 }
 
 .Formulario{
