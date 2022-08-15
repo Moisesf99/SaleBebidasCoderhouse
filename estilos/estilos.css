@@ -4,13 +4,14 @@
 }
 
 header {
-    background-color: bisque;
-    padding: 30px;
     grid-area: header;
-    justify-content: center;
-    text-align: center;
+    background-color: bisque;
 }
 
+.headerContenido{
+    justify-content: center;
+    display: flex;
+}
 ul {
     text-decoration: none;
     color: black;
@@ -118,6 +119,7 @@ footer {
     margin-bottom: 70px;
 }
 
+
 .Destacado{
     display: grid;
     grid-template-areas: 
@@ -186,21 +188,9 @@ grid-template-areas: Productos;
     text-align: center;
     grid-template-areas: Locales;
     margin-bottom: 80px;
+    margin-left: 10%;
 }
 
-.LocalesTexto {
-    text-align: center;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.LocalesMaps{
-    width: 350px;
-    height: 175px;
-    justify-content: center;
-    
-}
 
 .Nosotros{
     display: grid;
