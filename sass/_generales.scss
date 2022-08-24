@@ -1,0 +1,41 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    grid-area: header;
+    background-color: bisque;
+    justify-content: center;
+    display: flex;
+}
+
+
+ul {
+    text-decoration: none;
+    color: black;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+body {
+    background-image: $fondo;
+    justify-content: center;
+}
+
+footer {
+    background-color: bisque;
+    margin-top: 40px;
+    grid-area: footer;
+    text-align: center;
+}

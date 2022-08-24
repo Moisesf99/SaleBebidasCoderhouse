@@ -1,88 +1,10 @@
-* {
-    margin: 0%;
-    padding: 0%;
-}
-
-header {
-    grid-area: header;
-    background-color: bisque;
-}
-
-.headerContenido{
-    justify-content: center;
-    display: flex;
-}
-ul {
-    text-decoration: none;
-    color: black;
-
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    justify-content: center;
-    text-align: center;
-}
-
-li {
-    display: inline-block;
-}
-
-.Principal {
-    text-align: center;
-    color: black;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:larger;
-    grid-area: Principal;
-}
-
-.Noticias {
-    padding-top: 20vh;
-    text-align: center;
-    padding-bottom: 20vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    grid-area: Noticias;
-
-}
-
-.NoticiasTexto {
-    text-align: center;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-body {
-    background-color: white;
-    justify-content: center;
-}
-
-footer {
-    background-color: bisque;
-    margin-top: 40px;
-    grid-area: footer;
-    text-align: center;
-}
-
-.imagenNoticias{
-    height: 250px;
-    width: 250px;
-    justify-content: center;
-}
-
-.Home{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "Principal"
-    "Noticias"
-    "footer";
-}
+@import "variables";
+@import "generales";
+@import "home";
 
 .Informacion{
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $text;
     margin-top: 40px;
     margin-bottom: 100px;
     color: black;
@@ -91,7 +13,7 @@ footer {
 
 .Destacados{
     justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $text;
     grid-template-areas: Destacado;
 
 }
@@ -109,7 +31,7 @@ footer {
 .DestacadoTexto {
     text-align: center;
     color: darkblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $text;
     margin-bottom: 70px;
 }
 
@@ -125,7 +47,7 @@ footer {
 }
 .Productos {
   padding-top: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $text;
 text-align: center;
 justify-content: center;
 grid-template-areas: Productos;
@@ -146,14 +68,14 @@ grid-template-areas: Productos;
 .ProductosTexto {
     text-align: center;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $text;
     justify-content: center;
 }
 
 .Precios {
     text-align: center;
     color: darkgreen;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $text;
     font-weight: bolder;
 }
 
@@ -177,7 +99,7 @@ grid-template-areas: Productos;
 
 
 .Locales {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $text;
     justify-content: center;
     text-align: center;
     grid-template-areas: Locales;
@@ -193,7 +115,6 @@ grid-template-areas: Productos;
     "Informacion"
     "Locales"
     "footer";
-    background-image: linear-gradient(to right, white,whitesmoke);
 }
 
 .Formulario{
@@ -213,101 +134,7 @@ grid-template-areas: Productos;
     "header"
     "Formulario"
     "footer";
-    background-image: linear-gradient(to right, white,whitesmoke)
 }
 
-@media(min-width:500px){
-    .Home{
-        margin: 0px;
-        grid-template-areas: 
-        "header header"
-        "Principal Principal"
-        "Noticias Noticias"
-        "footer footer";
-        grid-template-columns: 1fr 1fr;
-    }
-    .Noticias{
-        justify-content: space-around;
-        column-gap: 50px;
-        row-gap: 50px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-    .Destacado{
-        margin: 0px;
-    }
-   .Destacados{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   }
 
-   .Producto{
-    margin: 0px;
-   }
-
-    .Productos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      
-    }
-
-    .Nosotros{
-        margin: 0px;
-    }
-
-   .Contacto{
-    margin: 0px;
-    grid-template-areas: 
-    "header"
-    "Formulario"
-    "footer";
-    grid-template-columns: 1fr;
-   }
-
-}
-
-@media(min-width:750px){
-    .Home{
-        margin: 0px;
-        grid-template-areas: 
-        "header header header"
-        "Principal Principal Principal"
-        "Noticias Noticias Noticias"
-        "footer footer footer";
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    
-    .Noticias{
-        justify-content: center;
-        column-gap: 100px;
-        row-gap: 100px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 1fr;
-    }
-    .Destacado{
-        margin: 0px;
-    }
-    
-    .Destacados{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .Producto{
-        margin: 0px;
-       
-    }
-    .Productos{
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 30px;
-        row-gap: 40px;
-    }
-    .Locales{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 70px;
-        margin-left: 30;
-    }
-}
+@import "media";

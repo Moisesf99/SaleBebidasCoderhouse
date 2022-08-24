@@ -1,0 +1,46 @@
+main{
+    text-align: center;
+    color: black;
+    font-family: $text;
+    font-size:larger;
+    grid-area: main;
+    h1{
+        color: red;
+    }
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+    }
+}
+
+.Noticias {
+    padding-top: 20vh;
+    text-align: center;
+    padding-bottom: 20vh;
+    font-family: $text;
+    grid-area: Noticias;
+    div{
+        img{
+            height: 250px;
+            width: 250px;
+            justify-content: center;
+        }
+        a{
+            p{
+                text-align: center;
+                color: black;
+                font-family: $text;
+            }
+        }
+    }
+}
+
+
+.Home{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "Noticias"
+    "footer";
+}
