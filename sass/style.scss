@@ -1,121 +1,10 @@
 @import "variables";
 @import "generales";
 @import "home";
+@import "destacados";
+@import "productos";
+ @import "nosotros";
 
-.Informacion{
-    text-align: center;
-    font-family: $text;
-    margin-top: 40px;
-    margin-bottom: 100px;
-    color: black;
-  grid-template-areas: Informacion;
-}
-
-.Destacados{
-    justify-content: center;
-    font-family: $text;
-    grid-template-areas: Destacado;
-
-}
-.ImagenDestacados{
-    width: 200px;
-    height: 200px;
-    transition: 1s;
-}
-
-.ImagenDestacados:hover{
-    height: 260px;
-    width: 260px;
-}
-
-.DestacadoTexto {
-    text-align: center;
-    color: darkblue;
-    font-family: $text;
-    margin-bottom: 70px;
-}
-
-
-.Destacado{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "Informacion"
-    "Destacados"
-    "footer";
-
-}
-.Productos {
-  padding-top: 50px;
-    font-family: $text;
-text-align: center;
-justify-content: center;
-grid-template-areas: Productos;
-}
-
-.ProductoImagen{
-    height: 250px;
-    width: 250px;
-    justify-content: center;
-    transition: all 1s;
-}
-
-.ProductoImagen:hover{
-    height: 300px;
-    width: 300px;
-}
-
-.ProductosTexto {
-    text-align: center;
-    color: black;
-    font-family: $text;
-    justify-content: center;
-}
-
-.Precios {
-    text-align: center;
-    color: darkgreen;
-    font-family: $text;
-    font-weight: bolder;
-}
-
-.Boton {
-    color: black;
-    text-align: center;
-    font-weight: bolder;
-    padding-bottom: 80px;
-
-}
-
-.Producto{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "Informacion"
-    "Productos"
-    "footer";
-}
-
-
-
-.Locales {
-    font-family: $text;
-    justify-content: center;
-    text-align: center;
-    grid-template-areas: Locales;
-    margin-bottom: 80px;
-    margin-left: 10%;
-}
-
-
-.Nosotros{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "Informacion"
-    "Locales"
-    "footer";
-}
 
 .Formulario{
     text-align: center;
@@ -134,7 +23,14 @@ grid-template-areas: Productos;
     "header"
     "Formulario"
     "footer";
+    @media(min-width:500px){
+        margin: 0px;
+    grid-template-areas: 
+    "header"
+    "Formulario"
+    "footer";
+    grid-template-columns: 1fr;
+    }
 }
 
 
-@import "media";

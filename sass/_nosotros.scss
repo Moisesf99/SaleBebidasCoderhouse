@@ -1,0 +1,22 @@
+.Locales {
+    @extend .texto;
+    grid-template-areas: Locales;
+    margin-bottom: 80px;
+    margin-left: 10%;
+    @media(min-width:750px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 70px;
+        margin-left: 30;
+    }
+}
+
+
+.Nosotros{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "Informacion"
+    "Locales"
+    "footer";
+}

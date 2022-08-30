@@ -1,2 +1,15 @@
 $fondo: linear-gradient(to right, white,whitesmoke);
 $text: Verdana, Geneva, Tahoma, sans-serif;
+$dimension: 1000px;
+
+.texto{
+    font-family: $text;
+    text-align: center;
+    justify-content: center;
+}
+
+@mixin tam ($width, $height){
+height: $height;
+width: $width;
+}
+    

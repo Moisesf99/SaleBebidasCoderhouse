@@ -1,7 +1,6 @@
 main{
-    text-align: center;
+    @extend .texto;
     color: black;
-    font-family: $text;
     font-size:larger;
     grid-area: main;
     h1{
@@ -14,24 +13,37 @@ main{
 }
 
 .Noticias {
+    @extend .texto;
     padding-top: 20vh;
-    text-align: center;
     padding-bottom: 20vh;
-    font-family: $text;
     grid-area: Noticias;
     div{
         img{
-            height: 250px;
-            width: 250px;
+            height: $dimension/4;
+            width: $dimension/4;
             justify-content: center;
         }
         a{
             p{
-                text-align: center;
                 color: black;
-                font-family: $text;
             }
         }
+    }
+    @media(min-width:500px){
+        justify-content: space-around;
+        column-gap: 50px;
+        row-gap: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    @media(min-width:750px){
+        justify-content: center;
+        column-gap: 100px;
+        row-gap: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;   
     }
 }
 
@@ -43,4 +55,23 @@ main{
     "main"
     "Noticias"
     "footer";
+    @media(min-width:500px){
+        margin: 0px;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "Noticias Noticias"
+        "footer footer";
+        grid-template-columns: 1fr 1fr;
+    }
+    @media(min-width:750px){
+        margin: 0px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "Noticias Noticias Noticias"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }

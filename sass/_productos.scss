@@ -1,0 +1,58 @@
+.Productos {
+    padding-top: 50px;
+    @extend .texto;
+    grid-template-areas: Productos;
+
+    @media(min-width:500px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media(min-width:750px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+}
+
+.ProductoImagen {
+    @include tam (250px, 250px);
+    justify-content: center;
+    transition: all 1s;
+}
+
+.ProductoImagen:hover {
+    @include tam (320px, 320px)
+}
+
+.ProductosTexto {
+    @extend .texto;
+    color: black;
+}
+
+.Precios {
+    @extend .texto;
+    color: darkgreen;
+    font-weight: bolder;
+}
+
+.Boton {
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 80px;
+
+}
+
+.Producto {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "Informacion"
+        "Productos"
+        "footer";
+
+    @media(min-width:500px) {
+        margin: 0px;
+    }
+}
