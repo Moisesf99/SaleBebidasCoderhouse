@@ -1,4 +1,4 @@
-.texto, .Locales, .Precios, .ProductosTexto, .Productos, .Destacados, .Informacion, .Noticias, main {
+.texto, .Locales, .Productos div p, .Productos div h2, .Productos, .Destacados, .Informacion, .Noticias, main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   justify-content: center;
@@ -118,6 +118,10 @@ main p {
   color: black;
   grid-template-areas: Informacion;
 }
+.Informacion h1 {
+  color: red;
+  margin-bottom: 20px;
+}
 
 .Destacados {
   grid-template-areas: Destacado;
@@ -154,6 +158,7 @@ main p {
 }
 
 .Productos {
+  margin: 0%;
   padding-top: 50px;
   grid-template-areas: Productos;
 }
@@ -171,33 +176,44 @@ main p {
     row-gap: 40px;
   }
 }
-
-.ProductoImagen {
+.Productos div img {
   height: 250px;
   width: 250px;
   justify-content: center;
   transition: all 1s;
 }
-
-.ProductoImagen:hover {
-  height: 320px;
-  width: 320px;
+.Productos div img:hover {
+  height: 260px;
+  width: 260px;
 }
-
-.ProductosTexto {
+.Productos div h2 {
   color: black;
+  font-size: 20px;
 }
-
-.Precios {
+.Productos div p {
   color: darkgreen;
   font-weight: bolder;
 }
-
-.Boton {
+.Productos div Form {
   color: black;
   text-align: center;
   font-weight: bolder;
-  padding-bottom: 80px;
+}
+.Productos div Form label {
+  margin-left: 0%;
+  justify-content: center;
+  text-align: center;
+}
+.Productos div Form input {
+  margin-left: 25%;
+  margin-right: 25%;
+  justify-content: center;
+}
+.Productos div Form Input {
+  margin-top: 10px;
+  background-image: linear-gradient(to right, white, whitesmoke);
+  color: darkgreen;
+  border-style: double;
 }
 
 .Producto {
@@ -233,22 +249,31 @@ main p {
 .Formulario {
   text-align: center;
   justify-content: center;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   grid-template-areas: Formulario;
   text-align: center;
   padding-left: 25%;
   padding-right: 25%;
 }
 
+.botones {
+  margin-top: 5px;
+  background-color: white;
+  color: black;
+  border-style: double;
+  border-color: white;
+  font-weight: bolder;
+}
+
 .Contacto {
   display: grid;
-  grid-template-areas: "header" "Formulario" "footer";
+  grid-template-areas: "header" "Informacion" "Formulario" "footer";
 }
 @media (min-width: 500px) {
   .Contacto {
     margin: 0px;
-    grid-template-areas: "header" "Formulario" "footer";
+    grid-template-areas: "header" "Informacion" "Formulario" "footer";
     grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=style.css.map */

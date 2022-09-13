@@ -9,24 +9,36 @@
 .Formulario{
     text-align: center;
     justify-content: center;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     grid-template-areas: Formulario;
     text-align: center;
     padding-left: 25%;
     padding-right: 25%;
+  
+}
+
+.botones{
+    margin-top: 5px;
+    background-color: white;
+    color: black;
+    border-style: double;
+    border-color: white;
+    font-weight: bolder;
 }
 
 .Contacto{
     display: grid;
     grid-template-areas: 
     "header"
+    "Informacion"
     "Formulario"
     "footer";
     @media(min-width:500px){
         margin: 0px;
     grid-template-areas: 
     "header"
+    "Informacion"
     "Formulario"
     "footer";
     grid-template-columns: 1fr;
